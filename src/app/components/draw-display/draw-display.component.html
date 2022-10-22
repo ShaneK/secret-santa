@@ -1,0 +1,9 @@
+<ng-container *ngIf="drawResult">
+  <h1>Welcome, {{ drawResult.drawer }}!</h1>
+  <h2>Your secret santa recipient is {{ drawResult.result }}.</h2>
+</ng-container>
+<ng-container *ngIf="!drawResult"> 
+  Rand string: {{ randString }} <br />
+  Names drawn: {{namesDrawn}}  <br />
+  All names drawn: {{ allNamesDrawn | json }}
+</ng-container>
